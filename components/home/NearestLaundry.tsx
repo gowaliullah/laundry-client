@@ -12,6 +12,7 @@ const shops = [
     { name: "Laundry Shop name", imageSrc: "https://i.ibb.co.com/MkgvQcMz/cloth.png", rating: 3 },
 ];
 
+
 const NearestLaundry = () => {
     return (
         <>
