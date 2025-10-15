@@ -28,16 +28,17 @@ export function MenuList() {
 
         {menuItems.map((item, index) => (
           <NavigationMenuItem key={index}>
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            
-              {item.button ? (
-                <Link href={item.href}>
-                  <Button>{item.label}</Button>
-                </Link>
-              ) : (
+           
+            {!item.button ? (
+              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                 <Link href={item.href}>{item.label}</Link>
-              )}
-            </NavigationMenuLink>
+              </NavigationMenuLink>
+            ) : (
+             
+              <Link href={item.href}>
+                <Button className="cursor-pointer">{item.label}</Button>
+              </Link>
+            )}
           </NavigationMenuItem>
         ))}
 
