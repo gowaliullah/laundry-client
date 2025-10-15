@@ -18,7 +18,7 @@ const NearestLaundry = () => {
         <>
             <div className="bg-gray-100 py-14">
                 <SectionTitle title="Nearest Laundry" />
-                <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {shops.map((shop, index) => (
                         <LaundryCard key={index} {...shop} />
                     ))}
