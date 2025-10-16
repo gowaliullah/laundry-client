@@ -4,6 +4,7 @@
 import Form from "@/components/form/Form";
 import Input from "@/components/form/Input";
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 import { FieldValues } from "react-hook-form";
 
 const RegisterPage = () => {
@@ -49,6 +50,15 @@ const RegisterPage = () => {
           >
             Register
           </button>
+
+          <button
+            type="submit"
+            className="w-full bg-black text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200 flex items-center justify-center gap-3"
+          > <FcGoogle className="size-5" />
+
+            SignUp With Google
+          </button>
+
           <div className="text-center mt-4 text-sm text-gray-600">
             <span>Already have an account?</span>
             <Link href="/login" className="text-blue-600 hover:underline ml-1">
